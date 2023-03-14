@@ -1,0 +1,35 @@
+.container{
+    position: relative;
+    padding: 30px 20px;
+    max-width: 1100px;
+    color: #15616d;
+}
+
+h1 {
+    color: #15616d;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+main {
+    padding-top: 6rem;
+    z-index: 1;
+    display: flex;
+}
+
+dt {
+    font-weight: bold;
+}
+
+.jsp {
+    float: left;
+}
+
+.jsp2 {
+    display:block; 
+    margin-left:10000px;
+}

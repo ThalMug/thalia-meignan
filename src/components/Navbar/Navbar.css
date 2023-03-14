@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+.navbar {
+    position: fixed;
+    background-color: unset;    
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 6px 6px 0px rgba(0,0,0,0.3);
+    background-color: #001524;
+    margin-bottom: 10px;
+    z-index: 10;
+}
+
+.navbar a {
+    color: #E1E6E1;
+    background-color: #001524;
+}
+
+.navbar .logo{
+    font-size: 2em;
+    font-weight: bold;
+    background-color: #001524;
+}
+
+
+.navbar .nav-links ul {
+    display: flex;
+    background-color: #001524;
+}
+
+.navbar .nav-links ul li {
+    margin: 0 25px;
+}
+
+.navbar .nav-links ul li.active a {
+    color: #FF7733;
+}
+
+
+a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.elt {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.elt:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #ff7d00;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.elt:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
+@media screen and (max-height: 300px) {
+    ul {
+        margin-top: 10px;
+    }
+}
+  
