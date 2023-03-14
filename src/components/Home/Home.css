@@ -1,15 +1,15 @@
-
-
-
 #bandeau{
-    padding: 10px;
-    background-image: url("https://img.itch.zone/aW1nLzY0ODAzMjUucG5n/original/5Eotce.png");
-    background-position: 0px 0px 100px;
-    background-size: cover;
     background-attachment: fixed;
     height: 20rem;
     padding-top: 30rem;
     margin-bottom: 90rem;
+}
+
+.band_cont {
+    background-image: url("https://img.itch.zone/aW1nLzY0ODAzMjUucG5n/original/5Eotce.png");
+    background-position: 0px 0px 100px;
+    background-size: cover;
+    background-attachment: fixed;
     filter: blur(3px);
 }
 

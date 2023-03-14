@@ -14,12 +14,10 @@ export default function Skills() {
                     <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />CSS</div>
                     <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt=""/>JavaScript</div>
                     <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />React</div>
-                    <div><img src="" /></div>
                     <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt=""/>Java</div>
                     <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />Python</div>
                     <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg" />Matlab</div>
                     <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" />Bash</div>
-                    <div><img src="" /></div>
                 </div>
                 <h1>Tools and Engines</h1>
                 <hr className="divider"></hr>
