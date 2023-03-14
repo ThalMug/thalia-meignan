@@ -1,22 +1,44 @@
-#bandeau{
-    background-attachment: fixed;
-    height: 20rem;
-    padding-top: 30rem;
-    margin-bottom: 90rem;
+body {
+    margin: 0;
+    padding: 0;
 }
-
-.band_cont {
-    background-image: url("https://img.itch.zone/aW1nLzY0ODAzMjUucG5n/original/5Eotce.png");
-    background-position: 0px 0px 100px;
+.header {
+    background-image: url(https://img.itch.zone/aW1nLzY0ODAzMjUucG5n/original/5Eotce.png); /* ajout de la couleur de fond */
+    background-position: 0px 0px 50px;
     background-size: cover;
-    background-attachment: fixed;
-    filter: blur(3px);
+    height: 300px; /* hauteur du bandeau */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 8rem;
+    filter: blur(4px);
 }
-
-.home{
-    margin-left: auto;
-    margin-right: auto;
-    padding: 15px;
-    width: 120px;
-    background: fixed;
+.contain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(70vh - 150px); /* ajustement de la hauteur du conteneur pour tenir compte de la hauteur du bandeau */
+}
+.photo {
+    flex: 1;
+    padding-left: 100px;
+}
+.photo img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 50%;
+}
+.text {
+    flex: 2;
+    padding-right: 8rem;
+}
+.text h1 {
+    font-size: 48px;
+    margin-bottom: 30px;
+    color: #15616d;
+}
+.text p {
+    font-size: 24px; /* agrandissement de la taille de police */
+    line-height: 1.5;
+    color: #001524;
 }

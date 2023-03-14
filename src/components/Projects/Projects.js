@@ -15,7 +15,7 @@ export default function Projects() {
 
     const games = [
         {             
-            "Name": "Nyasteroid",
+            "Name": "Nyasteroids",
             "Description": "84th Mini Jam. I worked as composer.",
             "image": "https://img.itch.zone/aW1nLzY0ODAzMjUucG5n/original/5Eotce.png",
             "link": ["Itch","https://metamaus.itch.io/nyasteroid"],
