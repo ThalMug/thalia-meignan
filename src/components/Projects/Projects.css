@@ -1,9 +1,9 @@
-.container{
+.containing{
     position: relative;
     padding: 30px 20px;
     margin-right: auto;
     margin-left: auto;
-    max-width: 1100px;
+    width: 1500px;
     color: #15616d;
 }
 
@@ -46,7 +46,7 @@ hr.long {
 
 .grille {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 100px;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -61,7 +61,7 @@ hr.long {
 
 .grid-item {
     border: 2px solid #ff7d00;
-    width: 100%;
+    width: 25rem;
     height: 15rem;
     padding-bottom: 100%;
     position: relative;
@@ -70,6 +70,7 @@ hr.long {
     transition: all 0.2s ease-out;
     background-color: black;
     text-align: center;
+    margin: auto;
 }
 
 .grid-item img {

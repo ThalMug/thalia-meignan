@@ -1,8 +1,12 @@
 import React,{ useState } from "react";
 import "./Projects.css";
 import lf from"./lf.png";
+import Switch from '../Switch/Switch';
+
+
 
 export default function Projects() {
+
     const [isHovered, setIsHovered] = useState(false);
 
     const handleMouseEnter = () => {
@@ -34,15 +38,13 @@ export default function Projects() {
             "image": "https://img.itch.zone/aW1nLzUxMDA3MzAucG5n/original/M3549X.png",
             "link": ["Itch","https://metamaus.itch.io/lostfound"],
             "hasLink": true
-        },
-        {
-            "Name": "Bomb'eirb",
-            "Description": "School Project where we had to code features for a simple 2D game (a bomberman-like videogame) using C and the SDL library.",
-            "image": "https://github.com/Phoetaim/bombeirb/raw/master/img/bombeirb.png",
-            "link": ["Itch",""],
-            "hasLink": false           
         }
     ];
+
+    const games_soundtrack = [
+
+    ];
+
 
     const other_proj = [
         {
@@ -53,16 +55,41 @@ export default function Projects() {
             "hasLink": false   
         }
     ]
+    const gameorst = [games,games_soundtrack]; 
+
+    const [checked, setChecked] = useState(false); 
+    const status = 0;
+
+
+    const handleChange = () => { 
+      
+      setChecked(!checked); 
+      status = 1;
+      
+    }; 
 
     return (
         <main>
-            <div className="container">
+            <div className="containing">
                 <h1>My Projects</h1>    
                 <hr className="long"></hr>
-                <h2>Video Games</h2>    
+                <h2>Video Games</h2>  
+
+
                 <hr className="divider"></hr>
+
+
+                <label class="switch">
+                    <input type="checkbox" onChange={handleChange}/>
+                    <span class="slider round"></span>
+                </label>
+                <h5>
+                    {checked ? 'Soundtrack' : 'VideoGames'}
+                </h5> 
+
+
                 <div class="grille">
-                {games.map((data, idx) => (
+                {gameorst[status].map((data, idx) => (
                     <div className={`grid-item ${isHovered ? "hover" : ""}`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                         <img src={data.image}/>
                         <p>{data.Name}</p>
