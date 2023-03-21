@@ -1,17 +1,18 @@
 {
   "files": {
     "main.css": "/thalia-meignan/static/css/main.22cea302.css",
-    "main.js": "/thalia-meignan/static/js/main.552f1a23.js",
+    "main.js": "/thalia-meignan/static/js/main.7627dfed.js",
     "static/js/787.7841bc2d.chunk.js": "/thalia-meignan/static/js/787.7841bc2d.chunk.js",
     "static/media/lf.png": "/thalia-meignan/static/media/lf.5845a0eed9a03a202f14.png",
+    "static/media/CV.pdf": "/thalia-meignan/static/media/CV.af114156026a12317825.pdf",
     "static/media/logo.svg": "/thalia-meignan/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/thalia-meignan/index.html",
     "main.22cea302.css.map": "/thalia-meignan/static/css/main.22cea302.css.map",
-    "main.552f1a23.js.map": "/thalia-meignan/static/js/main.552f1a23.js.map",
+    "main.7627dfed.js.map": "/thalia-meignan/static/js/main.7627dfed.js.map",
     "787.7841bc2d.chunk.js.map": "/thalia-meignan/static/js/787.7841bc2d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.22cea302.css",
-    "static/js/main.552f1a23.js"
+    "static/js/main.7627dfed.js"
   ]
 }
