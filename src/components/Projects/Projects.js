@@ -41,8 +41,16 @@ export default function Projects() {
         }
     ];
 
-    const games_soundtrack = [
-
+    const Soundtrack = [
+        {
+            "link":"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1289323441&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+        },        
+        {
+            "link":"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1384755244&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+        },
+        {
+            "link":"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1204042594&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+        }
     ];
 
 
@@ -50,15 +58,15 @@ export default function Projects() {
         {
             "Name": "Portolio",
             "Description": "I made the portfolio website you're currently viewing this from, using React, HTML and CSS.",
-            "image": "https://github.com/Phoetaim/bombeirb/raw/master/img/bombeirb.png",
-            "link": ["Link","http://localhost:3000/"],
+            "image": "",
+            "link": ["Link","/"],
             "hasLink": false   
         }
     ]
-    const gameorst = [games,games_soundtrack]; 
+    const gameorst = [games,other_proj]; 
 
     const [checked, setChecked] = useState(false); 
-    const status = 0;
+    let status = 0;
 
 
     const handleChange = () => { 
@@ -67,7 +75,6 @@ export default function Projects() {
       status = 1;
       
     }; 
-
     return (
         <main>
             <div className="containing">
@@ -85,11 +92,12 @@ export default function Projects() {
                 </label>
                 <h5>
                     {checked ? 'Soundtrack' : 'VideoGames'}
-                </h5> 
+                </h5>                
 
 
+                {!checked &&
                 <div class="grille">
-                {gameorst[status].map((data, idx) => (
+                {games.map((data, idx) => (
                     <div className={`grid-item ${isHovered ? "hover" : ""}`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                         <img src={data.image}/>
                         <p>{data.Name}</p>
@@ -100,6 +108,16 @@ export default function Projects() {
                     </div>      
                 ))}
 	            </div>
+                }
+                {checked && 
+                    <div class="grille">
+                    {Soundtrack.map((data, idx) => (   
+                        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src={data.link}></iframe> 
+                    ))}
+                    </div>
+                }
+
+
                 <h2>Other Projects</h2>    
                 <hr className="divider"></hr>
                 <div class="grille">

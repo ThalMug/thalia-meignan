@@ -6,7 +6,7 @@ body {
     background-image: url(https://img.itch.zone/aW1nLzY0ODAzMjUucG5n/original/5Eotce.png); /* ajout de la couleur de fond */
     background-position: 0px 0px 50px;
     background-size: cover;
-    height: 300px; /* hauteur du bandeau */
+    height: 25vh; /* hauteur du bandeau */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,6 +17,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+
     height: calc(70vh - 150px); /* ajustement de la hauteur du conteneur pour tenir compte de la hauteur du bandeau */
 }
 .photo {
@@ -42,4 +43,30 @@ body {
     font-size: 24px; /* agrandissement de la taille de police */
     line-height: 1.5;
     color: #001524;
+}
+
+@media screen and (max-width: 900px) {
+
+    .header{
+        display: none;
+    }
+    .photo{
+        display: none;
+    }
+    .text{
+        text-align: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10vh;
+        padding-right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contain{
+        height: 78vh;
+    }
 }

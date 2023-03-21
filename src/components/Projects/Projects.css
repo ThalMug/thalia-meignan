@@ -3,7 +3,7 @@
     padding: 30px 20px;
     margin-right: auto;
     margin-left: auto;
-    width: 1500px;
+    width: 80%;
     color: #15616d;
 }
 
@@ -133,11 +133,10 @@ p {
 
 @media screen and (max-width: 900px) {
     .grille {
-        display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-gap: 100px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        color: #ffecd1;
     }
+    .grid-item{
+        width: 70vw;
+    }
+
 }
